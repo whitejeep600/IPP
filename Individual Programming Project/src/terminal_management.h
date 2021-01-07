@@ -39,6 +39,7 @@ void set_cursor_on_board(cursor_t* cursor);
 
 /** Moves the cursor to the left.
  * @param[in] n - number of cells by which the cursor is moved.
+ */
 void cursor_left(int n);
 
 /** Reverses the color of background and characters in the terminal.

@@ -50,7 +50,7 @@ static void print_prompt(gamma_t* g, uint32_t player, cursor_t* cursor)
     if(free == 0) printf("Nie ma wolnych pol, na ktore gracz moze sie ruszyc\n");
     else
     {
-        printf("W nastepnym moveu gracz moze sie ruszyc na ");
+        printf("W nastepnym ruchu gracz moze sie ruszyc na ");
         printf("%" PRIu64 " ", free);
         polish_ending_field(free);
         printf("\n");

@@ -12,7 +12,8 @@ The program makes it possible to play in two ways: batch mode, which takes comma
 
 At the beginning, the program takes one of the following commands:
 
-B width height players areas
+B width height players areas,
+
 I width height players areas
 
 launching, respectively, the batch mode and interactive mode on a board width x height with a given number of players and maximum number of areas.

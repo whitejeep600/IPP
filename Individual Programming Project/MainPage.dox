@@ -1,0 +1,34 @@
+/**
+@mainpage Documentation of the gamma game
+
+### Game description
+
+The game is played on a rectangular board of identical square fields. Adjacent fields are such fields that have coinciding sides. A group of fields is considered an area if each of them can be reached from every other one through a sequence of adjacent fields. There can be one ore more players. At the beginning, the board is empty. In each turn, the players claim a single field by setting their checker there. A player can claim any field, but his checkers cannot constitute a bigger number of areas than P, where P is a parameter of each game. Once in a game, each player can make a golden move, consisting in taking another player's checker from the board and replacing it with one belonging to them. This move, however, cannot be made if it would result in violating the rule about the maximal number of areas. A player who is unable to perform either a regular or a golden move has to wait until it is possible. If none of the players can make any move, the game ends. The player who claimed the most fields, wins.
+
+
+### Program description
+
+The program makes it possible to play in two ways: batch mode, which takes commands from the terminal, and interactive mode through a TUI.
+
+At the beginning, the program takes one of the following commands:
+
+B width height players areas
+I width height players areas
+
+launching, respectively, the batch mode and interactive mode on a board width x height with a given number of players and maximum number of areas.
+
+In batch mode, it takes the following commands:
+
+m player x y – executes the function gamma_move,
+g player x y – executes the function gamma_golden_move,
+b player – executes the function gamma_busy_fields,
+f player – executes the function gamma_free_fields,
+q player – executes the function gamma_golden_possible,
+p – executes the function gamma_board.
+
+Interactive mode works, as follows:
+
+To execute a move, the cursor has to be set to the chosen field with the use of arrow keys. Then the spacebar is pressed for a normal move, and G is pressed for the golden move. By pressing C, a player can skip their turn. By pressing Ctrl-D, the game is ended.
+
+
+*/
